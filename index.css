@@ -1,0 +1,16 @@
+.alert-info {
+    /*background-color: #F8F7F7;*/
+}
+
+.favicon-image {
+    width: 53px;
+    height: 53px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.format-glyphicon {
+    color: #9C9D9D;
+    font-size: 14px;
+    margin-right: 10px;
+}
