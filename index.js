@@ -120,3 +120,10 @@ function countKeys(obj) {
     }
     return counter;
 }
+
+
+$(document).keypress(function (event) {
+    if (event.keyCode == 13) {
+        search();
+    }
+});
