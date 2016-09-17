@@ -46,7 +46,13 @@
     </div>
 
     <div class="row">
-        <div class="col-xs-offset-9">
+        <div class="col-xs-offset-5 col-xs-5">
+            <div class="input-group">
+                <input type="text" class="form-control" id="searchWebsite" placeholder="Search(by title, url or tag)">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-search" onclick="search()"></span></div>
+            </div>
+        </div>
+        <div class="col-xs-2">
             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addModal">ADD</button>
         </div>
     </div>
@@ -78,10 +84,8 @@
                     </button>
                 </div>
             </div>
-
         </div>
     </div>
-
 </div>
 
 
@@ -99,7 +103,9 @@
         <img src="{{favicon_image}}" alt="{{title}}"
              class="pull-left favicon-image">
         <p style="color: #323754; font-size: 18px; font-weight: 700">{{title}}</p>
-        <span class="glyphicon glyphicon-thumbs-up pull-right" style="font-size: 20px"></span>
+        <span class="glyphicon glyphicon-thumbs-up pull-right" style="font-size: 20px"
+              onclick="incrementLikes({{id}})"></span>
+        <span class="pull-right" style="font-size: 17px">{{likes}}&nbsp;&nbsp;</span>
         <p>
             <span class="glyphicon glyphicon-tag format-glyphicon"></span><span
                 style="font-size: 17px; color: #9C9D9D">{{tag}} | </span>
