@@ -50,11 +50,11 @@
             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addModal">ADD</button>
         </div>
     </div>
+    <br>
 
     <!--Add Modal-->
     <div class="modal fade" id="addModal" role="dialog">
         <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -69,7 +69,6 @@
                     </form>
                     <br>
                     <input type="text" class="form-control" id="add-url-address" placeholder="web/url address" required>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Push
@@ -98,6 +97,7 @@
         <img src="{{favicon_image}}" alt="{{title}}"
              class="pull-left favicon-image">
         <p style="color: #323754; font-size: 18px; font-weight: 700">{{title}}</p>
+        <span class="glyphicon glyphicon-thumbs-up pull-right" style="font-size: 20px"></span>
         <p>
             <span class="glyphicon glyphicon-tag format-glyphicon"></span><span
                 style="font-size: 17px; color: #9C9D9D">{{tag}} | </span>
@@ -106,6 +106,7 @@
             <a href="http://www.dgsiegel.net/" target="_blank"
                style="font-size: 17px; color: #0FB6E7">{{url_address}}</a>
         </p>
+
     </div>
     {{/each}}
 </script>
