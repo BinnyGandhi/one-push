@@ -14,3 +14,7 @@
     font-size: 14px;
     margin-right: 10px;
 }
+
+.modal-content {
+    width: 80%;
+}

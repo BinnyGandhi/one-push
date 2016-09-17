@@ -37,18 +37,56 @@
 
 <div class="container">
     <div class="row">
-        <div class="text-center page-header"><span style="font-size: 35px; font-weight: bold;">OnePush</span> <span
-                style="font-size: 17px">-- finding the best online website!</span></div>
+        <div class="text-center page-header"><span style="font-size: 35px; font-weight: bold;">OnePush</span>
+            <br class="visible-xs-block">
+            <span style="font-size: 17px">-- finding the best online website!</span></div>
     </div>
 
     <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10" id="list-all-data">
+        <div class="col-xs-offset-9">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addModal">ADD</button>
         </div>
-        <div class="col-md-1"></div>
-
     </div>
+
+    <!--Add Modal-->
+    <div class="modal fade" id="addModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Contribute / Add Website</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <input type="text" class="form-control" id="add-title" placeholder="title" required>
+                        <br class="visible-xs-block">
+                        <input type="text" class="form-control" id="add-tag" placeholder="tag" required>
+                    </form>
+                    <br>
+                    <input type="text" class="form-control" id="add-url-address" placeholder="web/url address" required>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Push
+                        Website
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </div>
+
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10" id="list-all-data"></div>
+    <div class="col-md-1"></div>
+</div>
+
 
 <!--Handle bar Template-->
 <script id="handlebar-template" type="text/x-handlebars-template">
@@ -60,6 +98,7 @@
         <p>
             <span class="glyphicon glyphicon-tag format-glyphicon"></span><span
                 style="font-size: 17px; color: #9C9D9D">{{tag}} | </span>
+            <br class="visible-xs-block">
             <span class="glyphicon glyphicon-link format-glyphicon"></span>
             <a href="http://www.dgsiegel.net/" target="_blank"
                style="font-size: 17px; color: #0FB6E7">{{url_address}}</a>
