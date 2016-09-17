@@ -3,5 +3,6 @@
  */
 
 var config = {
-    fetchUrl: 'https://hackerearth.0x10.info/api/one-push?type=json&query=list_websites'
+    fetchUrl: 'https://hackerearth.0x10.info/api/one-push?type=json&query=list_websites',
+    contributeUrl: 'https://hackerearth.0x10.info/api/one-push?type=json&query=push&'
 };

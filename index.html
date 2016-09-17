@@ -62,6 +62,7 @@
                     <h4 class="modal-title">Contribute / Add Website</h4>
                 </div>
                 <div class="modal-body">
+                    <div class="alert alert-warning sr-only" role="alert" id="addModalAlert"></div>
                     <form class="form-inline">
                         <input type="text" class="form-control" id="add-title" placeholder="title" required>
                         <br class="visible-xs-block">
@@ -71,7 +72,8 @@
                     <input type="text" class="form-control" id="add-url-address" placeholder="web/url address" required>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Push
+                    <button type="button" class="btn btn-default" onclick="contributeWebsite()"><span
+                            class="glyphicon glyphicon-plus"></span>Push
                         Website
                     </button>
                 </div>
