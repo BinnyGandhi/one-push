@@ -10,18 +10,17 @@ $(document).ready(function () {
 });
 
 function fetchData() {
-    $.ajax({
+    reqwest({
         url: config.fetchUrl,
-        type: 'GET',
-        crossDomain: true,
-        dataType: 'json',
-        success: function (result, xhr, status) {
-            app.message = result;
+        method: 'GET',
+        type: 'json',
+        crossOrigin: true,
+        success: function (response) {
+            app.message = response;
             displayLinks(app.message);
         },
-        error: function (error, xhr, status) {
+        error: function (error) {
             //ToDo: Display user-friendly error
-            // document.alert(JSON.stringify(error, null, 2));
             console.log(JSON.stringify(error, null, 2));
         }
     });
